@@ -1,6 +1,6 @@
 {
   "name": "davelink",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "High-performance Lavalink v4 client library with 70% less memory usage, smart load balancing, and production-ready features",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
