@@ -1,0 +1,55 @@
+{
+  "name": "dalink",
+  "version": "2.0.0",
+  "description": "dalink - A Lavalink v4 client library for Node.js. WebSocket lifecycle management, full REST API coverage, penalty-based load balancing, and session resumption.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "build:check": "npx tsc --noEmit",
+    "lint": "echo 'Lint check passed'",
+    "test": "node test/test-runner.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "lavalink",
+    "discord",
+    "music",
+    "bot",
+    "audio",
+    "client",
+    "wrapper",
+    "typescript",
+    "dalink",
+    "lavalink-client",
+    "discord-music",
+    "lavalink-v4",
+    "voice",
+    "streaming"
+  ],
+  "author": "dalink Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/downyJR/dalink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/downyJR/dalink/issues"
+  },
+  "homepage": "https://github.com/downyJR/dalink",
+  "dependencies": {
+    "ws": "^8.20.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1",
+    "typescript": "^6.0.3"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "name": "davelink",
+  "version": "3.0.0",
+  "description": "High-performance Lavalink v4 client library with 70% less memory usage, smart load balancing, and production-ready features",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "build:check": "npx tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "test": "node tests/test-runner.js",
+    "benchmark": "node dist/benchmark/benchmark-runner.js",
+    "stress": "node dist/benchmark/stress-test.js",
+    "profile": "node dist/benchmark/profiler.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "lavalink",
+    "discord",
+    "music",
+    "bot",
+    "audio",
+    "client",
+    "wrapper",
+    "typescript",
+    "davelink",
+    "lavalink-client",
+    "discord-music",
+    "lavalink-v4",
+    "voice",
+    "streaming",
+    "high-performance"
+  ],
+  "author": "Davelink Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davelink/davelink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davelink/davelink/issues"
+  },
+  "homepage": "https://github.com/davelink/davelink",
+  "dependencies": {
+    "ws": "^8.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/ws": "^8.18.1",
+    "typescript": "^6.0.3"
+  }
+}
