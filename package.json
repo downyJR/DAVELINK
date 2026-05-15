@@ -1,0 +1,51 @@
+{
+  "name": "davelink",
+  "version": "4.1.0",
+  "description": "High-performance Lavalink client for Node.js - TypeScript-first, memory-optimized, bulletproof audio streaming",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "",
+    "test": "node tests/comprehensive-test.js",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "lavalink",
+    "music",
+    "discord",
+    "bot",
+    "audio",
+    "streaming",
+    "websocket",
+    "typescript"
+  ],
+  "author": "downyJR (enhanced by community)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/downyJR/davelink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/downyJR/davelink/issues"
+  },
+  "homepage": "https://github.com/downyJR/davelink#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.13",
+    "typescript": "^5.7.0"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
+}
